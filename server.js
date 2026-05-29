@@ -64,6 +64,6 @@ app.use((req, res, next) => {
 app.use(express.static(__dirname, { extensions: ['html'] }));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log(`Listening on port ${port}`);
 });
