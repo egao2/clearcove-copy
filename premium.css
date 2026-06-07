@@ -1,0 +1,73 @@
+/* premium.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll Reveals */
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glassmorphism */
+.glass-nav {
+    background: rgba(25, 33, 43, 0.7) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Micro-interactions */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+.hover-lift:hover {
+    transform: translateY(-4px) scale(1.01) !important;
+    box-shadow: 0 10px 40px rgba(0, 200, 255, 0.1) !important;
+}
+
+.button-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 126, 118, 0.6) !important;
+}
+
+/* Gradient Text */
+.text-gradient-premium {
+    background: linear-gradient(135deg, #ffffff 0%, #a0e0da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Infinite Marquee */
+.marquee-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* We handle the animation via JS to calculate heights, or CSS keyframes */
+    animation: marquee-scroll 30s linear infinite;
+}
+.marquee-column:hover {
+    animation-play-state: paused;
+}
+
+.marquee-column.reverse {
+    animation: marquee-scroll-reverse 35s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-33.3333%); }
+}
+
+@keyframes marquee-scroll-reverse {
+    0% { transform: translateY(-33.3333%); }
+    100% { transform: translateY(0); }
+}
