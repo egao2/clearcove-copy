@@ -54,9 +54,6 @@ html {
     /* We handle the animation via JS to calculate heights, or CSS keyframes */
     animation: marquee-scroll 30s linear infinite;
 }
-.marquee-column:hover {
-    animation-play-state: paused;
-}
 
 .marquee-column.reverse {
     animation: marquee-scroll-reverse 35s linear infinite;
