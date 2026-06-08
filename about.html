@@ -193,13 +193,15 @@ No bloated enterprise contracts. No jargon. Just results.</p></div></div></div><
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var openBtn = document.querySelector('button[aria-label="Open navigation menu"]');
+    var openBtns = document.querySelectorAll('button[aria-label="Open navigation menu"]');
     var overlay = document.getElementById('mobile-menu-overlay');
     var closeBtn = document.getElementById('close-menu-btn');
-    if(openBtn && overlay && closeBtn) {
-      openBtn.addEventListener('click', function() {
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
+    if(openBtns.length > 0 && overlay && closeBtn) {
+      openBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          overlay.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
       });
       closeBtn.addEventListener('click', function() {
         overlay.classList.remove('open');
