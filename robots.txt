@@ -1,11 +1,11 @@
-# Robots.txt for clearcove.durable.site
+# Robots.txt for clearcove.pro
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://clearcove.durable.site/sitemap.xml
+Sitemap: https://clearcove.pro/sitemap.xml
 
 # AI agent discovery
-Llms-txt: https://clearcove.durable.site/llms.txt
-Agents-md: https://clearcove.durable.site/agents.md
-Openapi: https://clearcove.durable.site/openapi.json
+Llms-txt: https://clearcove.pro/llms.txt
+Agents-md: https://clearcove.pro/agents.md
+Openapi: https://clearcove.pro/openapi.json
