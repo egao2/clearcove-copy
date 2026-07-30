@@ -79,4 +79,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // 6. Fix broken footer legal links (Privacy Policy / Terms of Service)
+    // These link to index.html which is incorrect — remove the href so they don't mislead
+    document.querySelectorAll('a').forEach(a => {
+        const text = a.textContent.trim();
+        if ((text === 'Privacy Policy' || text === 'Terms of Service') && 
+            (a.getAttribute('href') === 'index.html' || a.getAttribute('href') === '/')) {
+            a.removeAttribute('href');
+            a.style.cursor = 'default';
+            a.style.opacity = '0.5';
+        }
+    });
+
+    // 7. Remove Blog from header nav (no real content yet)
+    document.querySelectorAll('header a, nav a').forEach(a => {
+        if (a.textContent.trim() === 'Blog' && a.getAttribute('href') === 'blog.html') {
+            a.style.display = 'none';
+        }
+    });
+
 });
