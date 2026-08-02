@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     if (aboutLink && !blogExists) {
         const blogLink = aboutLink.cloneNode(true);
-        blogLink.textContent = 'Blog';
+        blogLink.innerHTML = blogLink.innerHTML.replace('About', 'Blog');
         blogLink.setAttribute('href', 'blog.html');
         aboutLink.parentNode.insertBefore(blogLink, aboutLink.nextSibling);
     }
