@@ -1,0 +1,93 @@
+<style>
+    .cc-prefooter-sec {
+        padding: 120px 24px;
+        background-color: #0c1312; /* Very dark background */
+        text-align: center;
+        font-family: var(--typography-font-family, system-ui, sans-serif);
+        position: relative;
+        overflow: hidden;
+    }
+    .cc-prefooter-eyebrow {
+        color: #007E76;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .cc-prefooter-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #fcfcfc;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+    .cc-prefooter-desc {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        color: #9ca3af;
+        max-width: 700px;
+        margin: 0 auto 3rem;
+    }
+    .cc-prefooter-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .cc-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #007E76;
+        color: #ffffff;
+        font-weight: 500;
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+    .cc-btn-primary:hover { background-color: #00665f; }
+    
+    .cc-btn-outline {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        color: #d1d5db;
+        font-weight: 500;
+        padding: 14px 32px;
+        border-radius: 8px;
+        border: 1px solid rgba(156, 163, 175, 0.4);
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    .cc-btn-outline:hover { 
+        border-color: #fcfcfc;
+        color: #fcfcfc;
+    }
+    .cc-prefooter-meta {
+        margin-top: 3rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+    }
+    @media (min-width: 768px) {
+        .cc-prefooter-title { font-size: 4.5rem; }
+    }
+    </style>
+    <section class="cc-prefooter-sec">
+        <p class="cc-prefooter-eyebrow">Ready when you are</p>
+        <h2 class="cc-prefooter-title">Bring the noise. We'll clear the cove.</h2>
+        <p class="cc-prefooter-desc">Send us your operation, your backlog, or the workflow everyone else has written off. We'll come back with a delivery plan ranked by ROI — within a week.</p>
+        
+        <div class="cc-prefooter-btn-container">
+            <a href="https://calendar.app.google/mCDenTF29rv4Zzb18" class="cc-btn-primary">
+                Start a project
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="mailto:hello@clearcove.pro" class="cc-btn-outline">hello@clearcove.pro</a>
+        </div>
+        
+        <p class="cc-prefooter-meta">Founder-led. Senior architecture team. Fully remote, US-wide.</p>
+    </section>
