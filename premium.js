@@ -42,9 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
     // Apply reveal to sections, headings, images, and paragraphs
-    const elementsToReveal = document.querySelectorAll('section, h1, h2, h3, img, p');
+    const elementsToReveal = document.querySelectorAll('section, h1, h2, h3, img, p, .reveal-hidden');
     elementsToReveal.forEach(el => {
         // Skip small icons or specific elements
+        if (el.classList.contains('reveal-hidden')) {
+            observer.observe(el);
+            return;
+        }
         if (el.tagName.toLowerCase() === 'img' && el.width < 100) return;
         
         el.classList.add('reveal-hidden');
