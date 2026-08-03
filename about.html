@@ -122,14 +122,14 @@
 }
 
 /* Animations */
-.cc-fade-up {
+. {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-.cc-delay-1 { animation-delay: 0.2s; }
-.cc-delay-2 { animation-delay: 0.4s; }
-.cc-delay-3 { animation-delay: 0.6s; }
+. { animation-delay: 0.2s; }
+. { animation-delay: 0.4s; }
+. { animation-delay: 0.6s; }
 
 @keyframes fadeUp {
     to {
@@ -253,12 +253,12 @@
 
 </style>
 <div class="cc-about-page">
-    <section class="cc-hero cc-fade-up">
+    <section class="cc-hero ">
         <h1>No hype.<br/><span style="color: #007E76;">Just execution.</span></h1>
         <p>We bridge the gap between bleeding-edge AI models and practical, ROI-driven business operations. We build resilient, self-healing systems that slash overhead and accelerate growth.</p>
     </section>
 
-    <section class="cc-founder-sec cc-fade-up cc-delay-1">
+    <section class="cc-founder-sec ">
         <div class="cc-founder-container">
             <p class="cc-founder-quote">"Enterprise software used to take months to build. With modern AI orchestration, what used to take teams of engineers can now be deployed in weeks. But scaling it requires deep architectural discipline. That's why ClearCove exists."</p>
             <div class="cc-founder-author">Founder & Principal Architect</div>
@@ -267,21 +267,21 @@
     </section>
 
     <section class="cc-methodology">
-        <div class="cc-method-header cc-fade-up cc-delay-2">
+        <div class="cc-method-header ">
             <h2>Our Methodology</h2>
         </div>
         <div class="cc-method-grid">
-            <div class="cc-method-card cc-fade-up cc-delay-3">
+            <div class="cc-method-card ">
                 <div class="cc-method-num">01</div>
                 <h3>Process Diagnostics</h3>
                 <p>We deep-dive into your existing architecture and workflows, identifying exactly where manual processes are bottlenecking revenue.</p>
             </div>
-            <div class="cc-method-card cc-fade-up cc-delay-3">
+            <div class="cc-method-card ">
                 <div class="cc-method-num">02</div>
                 <h3>AI Tool-chaining</h3>
                 <p>We architect robust, scalable integrations that connect advanced LLMs directly to your CRM, support ticketing, or marketing databases.</p>
             </div>
-            <div class="cc-method-card cc-fade-up cc-delay-3">
+            <div class="cc-method-card ">
                 <div class="cc-method-num">03</div>
                 <h3>Human Handoff</h3>
                 <p>We deploy the agents with strict guardrails, ensuring that AI handles the heavy lifting while seamlessly escalating high-value decisions back to your human team.</p>

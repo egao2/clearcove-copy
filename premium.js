@@ -8,19 +8,41 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.add('glass-nav');
     }
 
-    // 2. Scroll Reveals
+    // 2. Scroll Reveals with Staggering
+    let staggerTimeout;
+    let revealQueue = [];
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-visible');
-                // Optional: stop observing once revealed
+                revealQueue.push(entry.target);
                 observer.unobserve(entry.target);
             }
         });
+        
+        if (revealQueue.length > 0) {
+            clearTimeout(staggerTimeout);
+            staggerTimeout = setTimeout(() => {
+                // Sort by vertical position to ensure top-to-bottom staggering
+                revealQueue.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+                
+                revealQueue.forEach((el, index) => {
+                    // Apply a staggered transition delay based on their index in the batch
+                    el.style.transitionDelay = `${index * 150}ms`;
+                    el.classList.add('reveal-visible');
+                    
+                    // Clean up the inline delay after the transition finishes so hover effects aren't delayed later
+                    setTimeout(() => {
+                        el.style.transitionDelay = '';
+                    }, 1000 + (index * 150));
+                });
+                revealQueue = [];
+            }, 50);
+        }
     }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-    // Apply reveal to sections, headings, images
-    const elementsToReveal = document.querySelectorAll('section, h2, h3, img');
+    // Apply reveal to sections, headings, images, and paragraphs
+    const elementsToReveal = document.querySelectorAll('section, h1, h2, h3, img, p');
     elementsToReveal.forEach(el => {
         // Skip small icons or specific elements
         if (el.tagName.toLowerCase() === 'img' && el.width < 100) return;
