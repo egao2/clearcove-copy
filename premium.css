@@ -112,3 +112,95 @@ body {
     --typography-body-lg-font-size: 1.25rem !important;
     --typography-body-md-line-height: 1.7 !important;
 }
+
+
+/* Force Geometric Background on all root wrappers */
+html, body, .website-container, [data-live-site-root], main {
+    background-color: #0d1117 !important;
+    background-image: 
+        radial-gradient(circle at 15% 30%, rgba(0, 126, 118, 0.15), transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(0, 126, 118, 0.12), transparent 40%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px) !important;
+    background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+/* Prefooter Global Styles */
+.cc-prefooter-sec {
+        padding: 120px 24px;
+        background-color: #0c1312; /* Very dark background */
+        text-align: center;
+        font-family: var(--typography-font-family, system-ui, sans-serif);
+        position: relative;
+        overflow: hidden;
+    }
+    .cc-prefooter-eyebrow {
+        color: #007E76;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .cc-prefooter-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #fcfcfc;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+    .cc-prefooter-desc {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        color: #9ca3af;
+        max-width: 700px;
+        margin: 0 auto 3rem;
+    }
+    .cc-prefooter-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .cc-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #007E76;
+        color: #ffffff;
+        font-weight: 500;
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+    .cc-btn-primary:hover { background-color: #00665f; }
+    
+    .cc-btn-outline {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        color: #d1d5db;
+        font-weight: 500;
+        padding: 14px 32px;
+        border-radius: 8px;
+        border: 1px solid rgba(156, 163, 175, 0.4);
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    .cc-btn-outline:hover { 
+        border-color: #fcfcfc;
+        color: #fcfcfc;
+    }
+    .cc-prefooter-meta {
+        margin-top: 3rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+    }
+    @media (min-width: 768px) {
+        .cc-prefooter-title { font-size: 4.5rem; }
+    }
