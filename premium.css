@@ -118,13 +118,14 @@ body {
 body {
     background-color: #0d1117 !important;
     background-image: 
-        radial-gradient(circle at 15% 30%, rgba(0, 126, 118, 0.15), transparent 40%),
-        radial-gradient(circle at 85% 70%, rgba(0, 126, 118, 0.12), transparent 40%),
-        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px) !important;
+        radial-gradient(circle at 15% 30%, rgba(0, 126, 118, 0.25), transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(0, 126, 118, 0.20), transparent 40%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
     background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px !important;
     background-position: center !important;
     background-attachment: fixed !important;
+    animation: bgPulse 15s ease-in-out infinite alternate !important;
 }
 
 /* Ensure all intermediate wrappers are transparent so the body background shows through */
