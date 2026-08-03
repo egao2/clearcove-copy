@@ -114,8 +114,8 @@ body {
 }
 
 
-/* Force Geometric Background on all root wrappers */
-html, body, .website-container, [data-live-site-root], main {
+/* Global Geometric Background (Applied ONLY to body to prevent stacking) */
+body {
     background-color: #0d1117 !important;
     background-image: 
         radial-gradient(circle at 15% 30%, rgba(0, 126, 118, 0.15), transparent 40%),
@@ -125,6 +125,13 @@ html, body, .website-container, [data-live-site-root], main {
     background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px !important;
     background-position: center !important;
     background-attachment: fixed !important;
+}
+
+/* Ensure all intermediate wrappers are transparent so the body background shows through */
+html, .website-container, [data-live-site-root], main, #header-marketer, .cc-about-page {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
 }
 
 /* Prefooter Global Styles */
