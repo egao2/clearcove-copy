@@ -87,8 +87,8 @@ founder_html = founder_css + """
 <section class="cc-founder-sec">
     <div class="cc-founder-container">
         <p class="cc-founder-quote">"Enterprise software used to take months to build. With modern AI orchestration, what used to take teams of engineers can now be deployed in weeks. But scaling it requires deep architectural discipline. That's why ClearCove exists."</p>
-        <div class="cc-founder-author">Founder</div>
-        <div class="cc-founder-title">Senior Platform Architect, Zendesk</div>
+        <div style="color: #fcfcfc; font-weight: 700; font-size: 1.25rem; margin-bottom: 0.25rem;">Eric G.</div>
+        <div class="cc-founder-author">Founder & Principal Architect</div>
     </div>
 </section>
 """
