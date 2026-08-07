@@ -133,13 +133,13 @@ new_css = """
 .cc-method-num {
     font-size: 3.5rem;
     font-weight: 900;
-    color: rgba(0, 126, 118, 0.3);
+    color: rgba(0, 200, 255, 0.9);
     line-height: 1;
     margin-bottom: 24px;
     transition: color 0.4s;
 }
 .cc-method-card:hover .cc-method-num {
-    color: rgba(0, 126, 118, 0.8);
+    color: rgba(0, 200, 255, 0.9);
 }
 .cc-method-card h3 {
     font-size: 1.75rem;
