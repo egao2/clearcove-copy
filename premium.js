@@ -145,3 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
 });
+
+// ClearCove AI Solutions Advisor Widget
+(function() {
+    var s = document.createElement('script');
+    s.src = 'https://clearcove-backend-production.up.railway.app/web/cc-widget.js';
+    s.async = true;
+    document.body.appendChild(s);
+})();
