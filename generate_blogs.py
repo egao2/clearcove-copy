@@ -43,7 +43,7 @@ blog1_content = """
 <div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
     <h3 class="text-2xl font-bold mb-4 text-white">Ready to upgrade your CX?</h3>
     <p class="mb-6" style="color: #d1d5db;">Let's discuss how a custom AI agent can streamline your support operations without sacrificing quality.</p>
-    <a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" data-slot="button" class="inline-block bg-[var(--primary-color)] hover:bg-[var(--primary-color-hover)] text-white font-medium py-3 px-8 rounded-full transition-colors button-glow">Book a Free Strategy Call</a>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
 </div>
 """
 create_page('blog-support-automation.html', 'Support Automation That Doesn\'t Feel Like a Machine', blog1_content)
@@ -72,9 +72,44 @@ blog2_content = """
 <div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
     <h3 class="text-2xl font-bold mb-4 text-white">Recognize any of these signs?</h3>
     <p class="mb-6" style="color: #d1d5db;">Let's discuss where AI can have the highest immediate impact on your operations and bottom line.</p>
-    <a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" data-slot="button" class="inline-block bg-[var(--primary-color)] hover:bg-[var(--primary-color-hover)] text-white font-medium py-3 px-8 rounded-full transition-colors button-glow">Book a Free Strategy Call</a>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
 </div>
 """
 create_page('blog-ai-readiness.html', '5 Signs Your Business Is Ready for AI Automation', blog2_content)
 
 print("Expanded blog content generated.")
+
+
+blog3_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on September 25, 2026 • 7 min read</p>
+<p class="mb-6" style="color: #d1d5db;">For years, integrating legacy SaaS platforms meant spending months writing fragile middleware and custom API connectors. Today, AI orchestration is changing the game. Instead of building brittle data pipelines, companies are deploying intelligent agents that can read, interpret, and write data across disparate systems using natural language and tool use.</p>
+<p class="mb-6" style="color: #d1d5db;">At ClearCove, we've seen a massive shift away from traditional iPaaS (Integration Platform as a Service) toward agentic workflows. Why? Because APIs break, schemas change, and maintaining middleware is an endless sunk cost. Agents, on the other hand, are adaptable. They don't just move data; they understand it.</p>
+<h2 class="text-3xl font-bold mt-12 mb-6" style="color: #fcfcfc;">The Death of Brittle Middleware</h2>
+<p class="mb-6" style="color: #d1d5db;">Consider a standard e-commerce flow: a customer requests a refund. In a traditional setup, this requires a webhook from Zendesk, a payload transformation via Zapier or MuleSoft, an API call to Stripe, another to Shopify to update inventory, and finally an email via SendGrid. If any of those schemas change, the whole pipeline breaks.</p>
+<p class="mb-6" style="color: #d1d5db;">With AI orchestration, a single agent handles the intent. It securely authenticates to Stripe, issues the refund based on natural language policy understanding, updates Shopify via a headless browser or direct API if needed, and drafts a personalized email. The logic lives in the model's reasoning, not in rigid code blocks.</p>
+<h2 class="text-3xl font-bold mt-12 mb-6" style="color: #fcfcfc;">Scaling Intelligent Operations</h2>
+<p class="mb-6" style="color: #d1d5db;">This isn't theoretical. We recently migrated a mid-market logistics firm from a legacy integration setup that cost k/month to maintain, to an agentic architecture running on fractional API costs. The result wasn't just savings—it was agility. When they switched billing providers, the agent adapted in hours, not weeks.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Tired of maintaining integrations?</h3>
+    <p class="mb-6" style="color: #d1d5db;">Let's discuss how AI agents can replace your fragile middleware and accelerate your operations.</p>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-agentic-integrations.html', 'How AI Agents Are Replacing Legacy SaaS Integrations', blog3_content)
+
+blog4_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on September 18, 2026 • 6 min read</p>
+<p class="mb-6" style="color: #d1d5db;">When enterprises decide to leverage their proprietary data with large language models, they typically face a fork in the road: should we fine-tune a model, or use Retrieval-Augmented Generation (RAG)? The answer is almost always RAG, but the nuance matters.</p>
+<p class="mb-6" style="color: #d1d5db;">Fine-tuning is excellent for teaching a model a new language, a specific tone, or a specialized format (like drafting legal contracts in a specific corporate style). But it is terrible at facts. If your product pricing changes, you cannot simply tell a fine-tuned model to forget the old price. You have to re-train it.</p>
+<h2 class="text-3xl font-bold mt-12 mb-6" style="color: #fcfcfc;">Why RAG Wins for Enterprise Knowledge</h2>
+<p class="mb-6" style="color: #d1d5db;">Retrieval-Augmented Generation solves the hallucination and update problem. Instead of baking facts into the model's weights, RAG acts like an open-book test. When a user asks a question, the system searches your secure database for the most relevant documents, hands them to the AI, and says, "Answer the user's question using ONLY these documents."</p>
+<p class="mb-6" style="color: #d1d5db;">At ClearCove, our standard enterprise architecture relies heavily on advanced RAG pipelines. We use vector databases to index everything from Slack histories to technical PDFs. When an employee asks, "What was the resolution to the server outage last month?", the AI retrieves the exact post-mortem doc and synthesizes the answer, complete with citations.</p>
+<h2 class="text-3xl font-bold mt-12 mb-6" style="color: #fcfcfc;">The Hybrid Approach</h2>
+<p class="mb-6" style="color: #d1d5db;">The reality is that mature AI deployments often use both. We use RAG to inject facts, and lightweight fine-tuning (PEFT/LoRA) to ensure the model's output aligns perfectly with the brand's voice. This hybrid approach delivers the accuracy of a database with the fluidity of a human expert.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Need help unlocking your data?</h3>
+    <p class="mb-6" style="color: #d1d5db;">Let's build a secure, hallucination-free knowledge retrieval system for your team.</p>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-rag-vs-finetuning.html', 'RAG vs. Fine-tuning: Choosing the Right Strategy for Your Data', blog4_content)
