@@ -113,3 +113,43 @@ blog4_content = """
 </div>
 """
 create_page('blog-rag-vs-finetuning.html', 'RAG vs. Fine-tuning: Choosing the Right Strategy for Your Data', blog4_content)
+
+blog5_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on July 15, 2026 • 5 min read</p>
+<p class="mb-6" style="color: #d1d5db;">Technical debt has always been a drag on velocity. But in the era of Large Language Models (LLMs), it's not just slowing you down—it's preventing you from using AI entirely. If your data is siloed and your APIs are undocumented, no AI agent can help you.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Ready to tackle technical debt?</h3>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-tech-debt-llms.html', 'The True Cost of Technical Debt in the Era of LLMs', blog5_content)
+
+blog6_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on June 28, 2026 • 6 min read</p>
+<p class="mb-6" style="color: #d1d5db;">Everyone wants to deploy AI, but very few companies have the data infrastructure to support it. Your data warehouse isn't just a place to store historical logs anymore; it's the brain of your future agentic workflows.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Is your data ready for AI?</h3>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-data-warehouse-bottleneck.html', 'Why Your Data Warehouse is the Real Bottleneck for AI', blog6_content)
+
+blog7_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on June 10, 2026 • 7 min read</p>
+<p class="mb-6" style="color: #d1d5db;">Deploying AI in healthcare requires more than just prompt engineering. It requires strict HIPAA compliance, data anonymization layers, and secure sandboxing to ensure patient data never leaks into a public model's training set.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Building AI for Healthcare?</h3>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-security-compliance-healthcare.html', 'Security and Compliance: Sandboxing AI Agents in Healthcare', blog7_content)
+
+blog8_content = """
+<p class="text-sm uppercase tracking-wider mb-8" style="color: #9ca3af;">Published on May 22, 2026 • 5 min read</p>
+<p class="mb-6" style="color: #d1d5db;">B2B SaaS onboarding is notoriously manual. We explore how custom AI agents can automate the extraction of client data, configure environments, and slash time-to-value from weeks to hours.</p>
+<div class="mt-16 p-8 bg-[var(--bg-color-alt)] rounded-3xl border border-gray-700/50">
+    <h3 class="text-2xl font-bold mb-4 text-white">Want to automate onboarding?</h3>
+    <div style="margin-top: 4rem;"><a href="https://calendar.app.google/mCDenTF29rv4Zzb18" target="_blank" class="cc-btn-primary">Book a Free Strategy Call</a></div>
+</div>
+"""
+create_page('blog-automating-onboarding.html', 'Automating Onboarding: How AI Slashes Time-to-Value for B2B SaaS', blog8_content)
